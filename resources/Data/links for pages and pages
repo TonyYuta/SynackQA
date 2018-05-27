@@ -1,0 +1,43 @@
+// links for pages  		|  	pages						|	objects
+//--------------------------------------------------------------------------------
+aBTestingLink					ABTestingPage					aBTestingPage				
+basicAuthLink					BasicAuthPage					basicAuthPage					
+brokenImagesLink				BrokenImagesPage				brokenImagesPage				
+challengingDOMLink				ChallengingDOMPage				challengingDOMPage				
+checkboxesLink					CheckboxesPage					checkboxesPage					
+contextMenuLink					ContextMenuPage					contextMenuPage					
+disappearingElementsLink		DisappearingElementsPage		disappearingElementsPage			
+dragAndDropLink					DragAndDropPage					dragAndDropPage		
+dropdownLink					DropdownPage					dropdownPage				
+dynamicContentLink				DynamicContentPage				dynamicContentPage				
+dynamicControlsLink				DynamicControlsPage				dynamicControlsPage				
+dynamicLoadingLink				DynamicLoadingPage				dynamicLoadingPage				
+exitIntentLink					ExitIntentPage					exitIntentPage				
+fileDownloadLink				FileDownloadPage				fileDownloadPage			
+fileUploadLink					FileUploadPage					fileUploadPage				
+floatingMenuLink				FloatingMenuPage				floatingMenuPage				
+forgotPasswordLink				ForgotPasswordPage				forgotPasswordPage			
+formAuthenticationLink			FormAuthenticationPage			formAuthenticationPage		
+framesLink						FramesPage						framesPage		
+geolocationLink					GeolocationPage					geolocationPage					
+horizontalSliderLink			HorizontalSliderPage			horizontalSliderPage			
+hoversLink						HoversPage						hoversPage			
+infiniteScrollLink				InfiniteScrollPage				infiniteScrollPage
+jQueryUIMenusLink				JQueryUIMenusPage				jQueryUIMenusPage				
+javaScriptAlertsLink			JavaScriptAlertsPage			javaScriptAlertsPage
+javaScriptOnloadEventErrorLink	JavaScriptOnloadEventErrorPage	javaScriptOnloadEventErrorPage
+keyPressesLink					KeyPressesPage					keyPressesPage
+largeAndDeepDOMLink				LargeAndDeepDOMPage				largeAndDeepDOMPage
+multipleWindowsLink				MultipleWindowsPage				multipleWindowsPage
+nestedFramesLink				NestedFramesPage				nestedFramesPage			
+notificationMessagesLink		NotificationMessagesPage		notificationMessagesPage
+redirectLinkLink				RedirectLinkPage				redirectLinkPage		
+secureFileDownloadLink			SecureFileDownloadPage			secureFileDownloadPage
+shiftingContentLink				ShiftingContentPage				shiftingContentPage			
+slowResourcesLink				SlowResourcesPage				slowResourcesPage			
+sortableDataTablesLink			SortableDataTablesPage			sortableDataTablesPage
+statusCodesLink					StatusCodesPage					statusCodesPage			
+typosLink						TyposPage						typosPage				
+wYSIWYGEditorLink				WYSIWYGEditorPage				wYSIWYGEditorPage				
+	
+		
