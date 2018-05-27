@@ -5,8 +5,9 @@
 <parameter name="groups" value="all"/>
   <test name="basicTest">
     <classes>
-      <class name="com.demoqa.webelements.BaseTest"/>
-      <class name="com.demoqa.webelements.HomePageTest"/>
+      <class name="com.herokuappTheInternet.SynackQA.BaseTest"/>
+      <class name="com.herokuappTheInternet.SynackQA.HomePageTest"/>
+      <class name="com.herokuappTheInternet.SynackQA.DisappearingElementsPageTest"/>    
     </classes>
   </test>
 </suite>
