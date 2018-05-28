@@ -21,14 +21,14 @@ import org.testng.annotations.Test;
  */
 public class HomePageTest extends BaseTest {
 	
-	@Test(enabled = true, groups = {"Homepage",  "bat", "regression", "all"}, priority = 0)
+	@Test(enabled = true, groups = {"HomePage",  "bat", "regression", "all"}, priority = 0)
 	public void testNavigateToHomePage() {
 		String expected = "";
 		homePage.navigateToHomePage();
 		Assert.assertEquals(homePage.currentPageTitle(), expected, "URI doesn't match to Home page");
 	}
 	
-	@Test(enabled = true, groups = {"Homepage", "RegistrationPage",  "regression", "all"}, priority = 0)
+	@Test(enabled = true, groups = {"HomePage", "RegistrationPage",  "regression", "all"}, priority = 0)
 	public void testNavigateToDisappearingElementsPage() {
 		String expected = "";
 		homePage.navigateToDisappearingElementsPage();

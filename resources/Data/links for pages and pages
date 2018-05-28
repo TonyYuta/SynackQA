@@ -1,6 +1,7 @@
-// links for pages  		|  	pages						|	objects
+// links for pages  		|  	pages/classes					|	objects
 //--------------------------------------------------------------------------------
-aBTestingLink					ABTestingPage					aBTestingPage				
+aBTestingLink					ABTestingPage					aBTestingPage
+								BasePage 						basePage			
 basicAuthLink					BasicAuthPage					basicAuthPage					
 brokenImagesLink				BrokenImagesPage				brokenImagesPage				
 challengingDOMLink				ChallengingDOMPage				challengingDOMPage				
@@ -20,7 +21,9 @@ forgotPasswordLink				ForgotPasswordPage				forgotPasswordPage
 formAuthenticationLink			FormAuthenticationPage			formAuthenticationPage		
 framesLink						FramesPage						framesPage		
 geolocationLink					GeolocationPage					geolocationPage					
-horizontalSliderLink			HorizontalSliderPage			horizontalSliderPage			
+horizontalSliderLink			HorizontalSliderPage			horizontalSliderPage
+								Helper 							helper
+								HomePage 						homePage		
 hoversLink						HoversPage						hoversPage			
 infiniteScrollLink				InfiniteScrollPage				infiniteScrollPage
 jQueryUIMenusLink				JQueryUIMenusPage				jQueryUIMenusPage				
@@ -28,6 +31,7 @@ javaScriptAlertsLink			JavaScriptAlertsPage			javaScriptAlertsPage
 javaScriptOnloadEventErrorLink	JavaScriptOnloadEventErrorPage	javaScriptOnloadEventErrorPage
 keyPressesLink					KeyPressesPage					keyPressesPage
 largeAndDeepDOMLink				LargeAndDeepDOMPage				largeAndDeepDOMPage
+								LoginPage 						loginPage
 multipleWindowsLink				MultipleWindowsPage				multipleWindowsPage
 nestedFramesLink				NestedFramesPage				nestedFramesPage			
 notificationMessagesLink		NotificationMessagesPage		notificationMessagesPage
@@ -38,6 +42,65 @@ slowResourcesLink				SlowResourcesPage				slowResourcesPage
 sortableDataTablesLink			SortableDataTablesPage			sortableDataTablesPage
 statusCodesLink					StatusCodesPage					statusCodesPage			
 typosLink						TyposPage						typosPage				
-wYSIWYGEditorLink				WYSIWYGEditorPage				wYSIWYGEditorPage				
+wYSIWYGEditorLink				WYSIWYGEditorPage				wYSIWYGEditorPage
+
 	
-		
+//--------------------------------------------------------------------------------
+// pages & additional classes
+//--------------------------------------------------------------------------------
+ABTestingPage
+BasePage
+BasicAuthPage
+BrokenImagesPage
+ChallengingDOMPage
+CheckboxesPage
+ContextMenuPage
+DisappearingElementsPage
+DragAndDropPage
+DropdownPage
+DynamicContentPage
+DynamicControlsPage
+DynamicLoadingPage
+ExitIntentPage
+FileDownloadPage
+FileUploadPage
+FloatingMenuPage
+ForgotPasswordPage
+FormAuthenticationPage
+FramesPage
+GeolocationPage
+HorizontalSliderPage
+Helper
+HomePage
+HoversPage
+InfiniteScrollPage
+JQueryUIMenusPage
+JavaScriptAlertsPage
+JavaScriptOnloadEventErrorPage
+KeyPressesPage
+LargeAndDeepDOMPage
+LoginPage
+MultipleWindowsPage
+NestedFramesPage
+NotificationMessagesPage
+RedirectLinkPage
+SecureFileDownloadPage
+ShiftingContentPage
+SlowResourcesPage
+SortableDataTablesPage
+StatusCodesPage
+TyposPage
+WYSIWYGEditorPage
+	
+//--------------------------------------------------------------------------------
+// test classes
+//--------------------------------------------------------------------------------
+BaseTest
+DisappearingElementsPageTest
+DriverFactory
+DynamicContentPageTest
+LoginPageTest
+HomePageTest
+HoversPageTest
+NotificationMessagesPageTest
+
