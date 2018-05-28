@@ -8,6 +8,7 @@
 
 package com.herokuappTheInternet.SynackQA;
 
+import org.openqa.selenium.WebDriver;
 
 /**
  * ForgotPasswordPage //ADDD (description of class)
@@ -21,5 +22,9 @@ package com.herokuappTheInternet.SynackQA;
  * @since       1.0
  *
  */
-public class ForgotPasswordPage {
+public class ForgotPasswordPage extends BasePage {
+	
+	public ForgotPasswordPage(WebDriver driver) {
+		super(driver);
+	}
 }

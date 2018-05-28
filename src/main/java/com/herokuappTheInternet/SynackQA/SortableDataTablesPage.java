@@ -8,6 +8,7 @@
 
 package com.herokuappTheInternet.SynackQA;
 
+import org.openqa.selenium.WebDriver;
 
 /**
  * SortableDataTablesPage //ADDD (description of class)
@@ -21,5 +22,9 @@ package com.herokuappTheInternet.SynackQA;
  * @since       1.0
  *
  */
-public class SortableDataTablesPage {
+public class SortableDataTablesPage extends BasePage {
+	
+	public SortableDataTablesPage(WebDriver driver) {
+		super(driver);
+	}
 }

@@ -8,6 +8,7 @@
 
 package com.herokuappTheInternet.SynackQA;
 
+import org.openqa.selenium.WebDriver;
 
 /**
  * FormAuthenticationPage //ADDD (description of class)
@@ -21,5 +22,9 @@ package com.herokuappTheInternet.SynackQA;
  * @since       1.0
  *
  */
-public class FormAuthenticationPage {
+public class FormAuthenticationPage extends BasePage {
+	
+	public FormAuthenticationPage(WebDriver driver) {
+		super(driver);
+	}
 }

@@ -8,6 +8,7 @@
 
 package com.herokuappTheInternet.SynackQA;
 
+import org.openqa.selenium.WebDriver;
 
 /**
  * NestedFramesPage //ADDD (description of class)
@@ -21,5 +22,9 @@ package com.herokuappTheInternet.SynackQA;
  * @since       1.0
  *
  */
-public class NestedFramesPage {
+public class NestedFramesPage extends BasePage {
+	
+	public NestedFramesPage(WebDriver driver) {
+		super(driver);
+	}
 }

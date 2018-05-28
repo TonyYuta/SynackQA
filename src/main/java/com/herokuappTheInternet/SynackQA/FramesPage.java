@@ -8,6 +8,7 @@
 
 package com.herokuappTheInternet.SynackQA;
 
+import org.openqa.selenium.WebDriver;
 
 /**
  * FramesPage //ADDD (description of class)
@@ -21,5 +22,9 @@ package com.herokuappTheInternet.SynackQA;
  * @since       1.0
  *
  */
-public class FramesPage {
+public class FramesPage extends BasePage {
+	
+	public FramesPage(WebDriver driver) {
+		super(driver);
+	}
 }

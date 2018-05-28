@@ -8,6 +8,7 @@
 
 package com.herokuappTheInternet.SynackQA;
 
+import org.openqa.selenium.WebDriver;
 
 /**
  * ExitIntentPage //ADDD (description of class)
@@ -21,5 +22,9 @@ package com.herokuappTheInternet.SynackQA;
  * @since       1.0
  *
  */
-public class ExitIntentPage {
+public class ExitIntentPage extends BasePage {
+	
+	public ExitIntentPage(WebDriver driver) {
+		super(driver);
+	}
 }

@@ -8,6 +8,7 @@
 
 package com.herokuappTheInternet.SynackQA;
 
+import org.openqa.selenium.WebDriver;
 
 /**
  * RedirectLinkPage //ADDD (description of class)
@@ -21,5 +22,9 @@ package com.herokuappTheInternet.SynackQA;
  * @since       1.0
  *
  */
-public class RedirectLinkPage {
+public class RedirectLinkPage extends BasePage {
+	
+	public RedirectLinkPage(WebDriver driver) {
+		super(driver);
+	}
 }

@@ -8,6 +8,7 @@
 
 package com.herokuappTheInternet.SynackQA;
 
+import org.openqa.selenium.WebDriver;
 
 /**
  * LoatingMenuPage //ADDD (description of class)
@@ -21,5 +22,9 @@ package com.herokuappTheInternet.SynackQA;
  * @since       1.0
  *
  */
-public class LoatingMenuPage {
+public class LoatingMenuPage extends BasePage {
+	
+	public LoatingMenuPage(WebDriver driver) {
+		super(driver);
+	}
 }

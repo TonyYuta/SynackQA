@@ -8,6 +8,7 @@
 
 package com.herokuappTheInternet.SynackQA;
 
+import org.openqa.selenium.WebDriver;
 
 /**
  * WYSIWYGEditorPage //ADDD (description of class)
@@ -21,5 +22,9 @@ package com.herokuappTheInternet.SynackQA;
  * @since       1.0
  *
  */
-public class WYSIWYGEditorPage {
+public class WYSIWYGEditorPage extends BasePage {
+	
+	public WYSIWYGEditorPage(WebDriver driver) {
+		super(driver);
+	}
 }

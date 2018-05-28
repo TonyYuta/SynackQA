@@ -8,6 +8,7 @@
 
 package com.herokuappTheInternet.SynackQA;
 
+import org.openqa.selenium.WebDriver;
 
 /**
  * MultipleWindowsPage //ADDD (description of class)
@@ -21,5 +22,9 @@ package com.herokuappTheInternet.SynackQA;
  * @since       1.0
  *
  */
-public class MultipleWindowsPage {
+public class MultipleWindowsPage extends BasePage {
+	
+	public MultipleWindowsPage(WebDriver driver) {
+		super(driver);
+	}
 }

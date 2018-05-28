@@ -8,6 +8,7 @@
 
 package com.herokuappTheInternet.SynackQA;
 
+import org.openqa.selenium.WebDriver;
 
 /**
  * HoversPage //ADDD (description of class)
@@ -21,5 +22,9 @@ package com.herokuappTheInternet.SynackQA;
  * @since       1.0
  *
  */
-public class HoversPage {
+public class HoversPage extends BasePage {
+	
+	public HoversPage(WebDriver driver) {
+		super(driver);
+	}
 }

@@ -8,6 +8,7 @@
 
 package com.herokuappTheInternet.SynackQA;
 
+import org.openqa.selenium.WebDriver;
 
 /**
  * NotificationMessagesPage //ADDD (description of class)
@@ -21,5 +22,9 @@ package com.herokuappTheInternet.SynackQA;
  * @since       1.0
  *
  */
-public class NotificationMessagesPage {
+public class NotificationMessagesPage extends BasePage {
+	
+	public NotificationMessagesPage(WebDriver driver) {
+		super(driver);
+	}
 }

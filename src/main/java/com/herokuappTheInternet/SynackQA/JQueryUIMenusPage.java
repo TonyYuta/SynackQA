@@ -8,6 +8,7 @@
 
 package com.herokuappTheInternet.SynackQA;
 
+import org.openqa.selenium.WebDriver;
 
 /**
  * JQueryUIMenusPage //ADDD (description of class)
@@ -21,5 +22,9 @@ package com.herokuappTheInternet.SynackQA;
  * @since       1.0
  *
  */
-public class JQueryUIMenusPage {
+public class JQueryUIMenusPage extends BasePage {
+	
+	public JQueryUIMenusPage(WebDriver driver) {
+		super(driver);
+	}
 }

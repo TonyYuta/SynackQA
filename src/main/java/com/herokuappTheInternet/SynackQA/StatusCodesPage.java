@@ -8,6 +8,7 @@
 
 package com.herokuappTheInternet.SynackQA;
 
+import org.openqa.selenium.WebDriver;
 
 /**
  * StatusCodesPage //ADDD (description of class)
@@ -21,5 +22,9 @@ package com.herokuappTheInternet.SynackQA;
  * @since       1.0
  *
  */
-public class StatusCodesPage {
+public class StatusCodesPage extends BasePage {
+	
+	public StatusCodesPage(WebDriver driver) {
+		super(driver);
+	}
 }

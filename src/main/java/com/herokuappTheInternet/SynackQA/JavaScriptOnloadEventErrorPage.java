@@ -8,6 +8,7 @@
 
 package com.herokuappTheInternet.SynackQA;
 
+import org.openqa.selenium.WebDriver;
 
 /**
  * JavaScriptOnloadEventErrorPage //ADDD (description of class)
@@ -21,5 +22,9 @@ package com.herokuappTheInternet.SynackQA;
  * @since       1.0
  *
  */
-public class JavaScriptOnloadEventErrorPage {
+public class JavaScriptOnloadEventErrorPage extends BasePage {
+	
+	public JavaScriptOnloadEventErrorPage(WebDriver driver) {
+		super(driver);
+	}
 }

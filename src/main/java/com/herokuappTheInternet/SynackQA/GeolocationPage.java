@@ -8,6 +8,7 @@
 
 package com.herokuappTheInternet.SynackQA;
 
+import org.openqa.selenium.WebDriver;
 
 /**
  * GeolocationPage //ADDD (description of class)
@@ -21,5 +22,9 @@ package com.herokuappTheInternet.SynackQA;
  * @since       1.0
  *
  */
-public class GeolocationPage {
+public class GeolocationPage extends BasePage {
+	
+	public GeolocationPage(WebDriver driver) {
+		super(driver);
+	}
 }

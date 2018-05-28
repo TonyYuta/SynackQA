@@ -8,6 +8,7 @@
 
 package com.herokuappTheInternet.SynackQA;
 
+import org.openqa.selenium.WebDriver;
 
 /**
  * LargeAndDeepDOMPage //ADDD (description of class)
@@ -21,5 +22,9 @@ package com.herokuappTheInternet.SynackQA;
  * @since       1.0
  *
  */
-public class LargeAndDeepDOMPage {
+public class LargeAndDeepDOMPage extends BasePage {
+	
+	public LargeAndDeepDOMPage(WebDriver driver) {
+		super(driver);
+	}
 }
