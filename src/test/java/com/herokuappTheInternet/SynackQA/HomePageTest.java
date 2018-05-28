@@ -23,14 +23,14 @@ public class HomePageTest extends BaseTest {
 	
 	@Test(enabled = true, groups = {"HomePage",  "bat", "regression", "all"}, priority = 0)
 	public void testNavigateToHomePage() {
-		String expected = "";
+		String expected = "The Internet";
 		homePage.navigateToHomePage();
 		Assert.assertEquals(homePage.currentPageTitle(), expected, "URI doesn't match to Home page");
 	}
 	
 	@Test(enabled = true, groups = {"HomePage", "RegistrationPage",  "regression", "all"}, priority = 0)
 	public void testNavigateToDisappearingElementsPage() {
-		String expected = "";
+		String expected = "The Internet";
 		homePage.navigateToDisappearingElementsPage();
 		Assert.assertEquals(homePage.currentPageTitle(), expected, "URI doesn't match to Home page");
 	}
