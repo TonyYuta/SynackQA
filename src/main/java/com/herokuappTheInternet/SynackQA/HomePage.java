@@ -174,7 +174,7 @@ public class HomePage extends BasePage {
 	}
 	
 	public LoatingMenuPage navigateToLoatingMenuPage() {
-		we = driver.findElement(loatingMenuLink);
+		we = driver.findElement(floatingMenuLink);
 		we.click();
 		return new LoatingMenuPage(driver);
 	}
