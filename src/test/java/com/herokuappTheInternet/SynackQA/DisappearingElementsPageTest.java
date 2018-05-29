@@ -24,6 +24,7 @@ public class DisappearingElementsPageTest extends BaseTest {
 	@Test(enabled = true, groups = {"DisappearingElementsPageTest",  "bat", "regression", "all"}, priority = 0)
 	public void testNavigateToHomePage() {
 		String expected = "The Internet";
+		homePage.navigateToDisappearingElementsPage();
 		disappearingElementsPage.navigateToHomePage();
 		Assert.assertEquals(homePage.currentPageTitle(), expected, "Welcome message doesn't match to Home page");
 	}
