@@ -21,13 +21,13 @@ import org.testng.annotations.Test;
  */
 public class DisappearingElementsPageTest extends BaseTest {
 	
-	@Test(enabled = true, groups = {"Homepage",  "bat", "regression", "all"}, priority = 0)
+	@Test(enabled = true, groups = {"HomePage",  "bat", "regression", "all"}, priority = 0)
 	public void testNavigateToHomePage() {
 		String expected = "The Internet";
-		homePage.navigateToHomePage();
-		Assert.assertEquals(homePage.currentPageTitle(), expected, "URI doesn't match to Home page");
+		disappearingElementsPage.navigateToHomePage();
+		Assert.assertEquals(homePage.currentPageTitle(), expected, "Welcome message doesn't match to Home page");
 	}
-	
+
 	
 	
 	
