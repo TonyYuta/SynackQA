@@ -21,7 +21,7 @@ import org.testng.annotations.Test;
  */
 public class DisappearingElementsPageTest extends BaseTest {
 	
-	@Test(enabled = true, groups = {"HomePage",  "bat", "regression", "all"}, priority = 0)
+	@Test(enabled = true, groups = {"DisappearingElementsPage",  "bat", "regression", "all"}, priority = 0)
 	public void testNavigateToHomePage() {
 		String expected = "The Internet";
 		disappearingElementsPage.navigateToHomePage();
