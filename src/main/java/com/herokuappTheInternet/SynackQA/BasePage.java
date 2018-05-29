@@ -44,5 +44,9 @@ public class BasePage {
 		return driver.getTitle();
 	}
 	
+	public String currentUrl() {
+		return driver.getCurrentUrl();
+	}
+	
 	
 }

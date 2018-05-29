@@ -34,6 +34,11 @@ public class BaseTest {
 	
 	HomePage homePage;
 	DisappearingElementsPage disappearingElementsPage;
+	AboutPage aboutPage;
+	ContactUsPage contactUsPage;
+	DynamicContentPage dynamicContentPage;
+	PortfolioPage portfolioPage;
+	GalleryPage galleryPage;
 	Helper helper;
 	
 	ArrayList<String> al;
@@ -52,6 +57,11 @@ public class BaseTest {
 		
 		homePage = new HomePage(driver);
 		disappearingElementsPage = new DisappearingElementsPage(driver);
+		aboutPage = new AboutPage(driver);
+		contactUsPage = new ContactUsPage(driver);
+		dynamicContentPage = new DynamicContentPage(driver);
+		portfolioPage = new PortfolioPage(driver);
+		galleryPage = new GalleryPage(driver);
 		helper = new Helper();
 	}
 	
