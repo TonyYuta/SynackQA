@@ -1,5 +1,6 @@
 // links for pages  		|  	pages/classes					|	objects
 //--------------------------------------------------------------------------------
+								AboutPage						aboutPage
 aBTestingLink					ABTestingPage					aBTestingPage
 								BasePage 						basePage			
 basicAuthLink					BasicAuthPage					basicAuthPage					
@@ -48,6 +49,7 @@ wYSIWYGEditorLink				WYSIWYGEditorPage				wYSIWYGEditorPage
 //--------------------------------------------------------------------------------
 // pages & additional classes
 //--------------------------------------------------------------------------------
+AboutPage
 ABTestingPage
 BasePage
 BasicAuthPage
