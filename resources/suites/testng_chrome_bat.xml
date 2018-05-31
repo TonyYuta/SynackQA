@@ -8,6 +8,8 @@
       <class name="com.herokuappTheInternet.SynackQA.BaseTest"/>
       <class name="com.herokuappTheInternet.SynackQA.HomePageTest"/>
       <class name="com.herokuappTheInternet.SynackQA.DisappearingElementsPageTest"/>    
+      <class name="com.herokuappTheInternet.SynackQA.DynamicContentPageTest"/>    
+
     </classes>
   </test>
 </suite>

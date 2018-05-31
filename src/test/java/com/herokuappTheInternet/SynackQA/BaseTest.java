@@ -12,9 +12,6 @@ import java.util.ArrayList;
 import java.util.HashSet;
 
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Parameters;
 
 /**
  * BaseTest //ADDD (description of class)
@@ -43,10 +40,10 @@ public class BaseTest {
 	
 	ArrayList<String> al;
 	HashSet<String> hs;
-	
+/*	
 	@Parameters({ "browser", "appURL", "groups" })
 	@BeforeClass(alwaysRun = true)				
-	public void initializeTestBaseSetup(String browser, String appURL, String groups) {
+	public void initializeClassTestBaseSetup(String browser, String appURL, String groups) {
 		try {
 			DriverFactory.setDriver(browser, appURL, groups);
 
@@ -65,14 +62,13 @@ public class BaseTest {
 		helper = new Helper();
 	}
 	
-	@AfterClass(enabled = true, alwaysRun = true)
+	@AfterClass(alwaysRun = true)
 	public void afterClassTearDown() {
 		//driver.close();
 		driver.quit();
 		}	
 	
-
-	
+*/
 	
 
 }

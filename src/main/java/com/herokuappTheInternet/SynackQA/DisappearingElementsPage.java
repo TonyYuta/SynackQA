@@ -52,19 +52,19 @@ public class DisappearingElementsPage extends BasePage {
 	}
 	
 	public ContactUsPage navigateToContactUstPage() {
-		we = driver.findElement(aboutBtn);
+		we = driver.findElement(contactUsBtn);
 		we.click();
 		return new ContactUsPage(driver);
 	}
 	
 	public PortfolioPage navigateToPortfolioPage() {
-		we = driver.findElement(aboutBtn);
+		we = driver.findElement(portfolioBtn);
 		we.click();
 		return new PortfolioPage(driver);
 	}
 	
 	public GalleryPage navigateToGalleryPage() {
-		we = driver.findElement(aboutBtn);
+		we = driver.findElement(galleryBtn);
 		we.click();
 		return new GalleryPage(driver);
 	}

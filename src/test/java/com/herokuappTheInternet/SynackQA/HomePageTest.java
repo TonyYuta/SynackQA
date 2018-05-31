@@ -20,7 +20,36 @@ import org.testng.annotations.Test;
  *
  */
 public class HomePageTest extends BaseTest {
+	/*
+	@Parameters({ "browser", "appURL", "groups" })
+	@BeforeMethod(alwaysRun = true)				
+	//public void initializeClassTestBaseSetup(String browser, String appURL, String groups) {
+	public void initializeTestBaseSetup(String browser, String appURL, String groups) {
+		try {
+			DriverFactory.setDriver(browser, appURL, groups);
+
+		} catch (Exception e) {
+			System.out.println("Error....." + e.getStackTrace());
+		}
+		driver = DriverFactory.getDriver();
+		
+		homePage = new HomePage(driver);
+		disappearingElementsPage = new DisappearingElementsPage(driver);
+		aboutPage = new AboutPage(driver);
+		contactUsPage = new ContactUsPage(driver);
+		dynamicContentPage = new DynamicContentPage(driver);
+		portfolioPage = new PortfolioPage(driver);
+		galleryPage = new GalleryPage(driver);
+		helper = new Helper();
+	}
 	
+	@AfterMethod(enabled = true, alwaysRun = true)
+	//public void afterClassTearDown() {
+	public void afterMethodearDown() {
+	//	driver.close();
+		driver.quit();
+		}		
+	*/
 	@Test(enabled = true, groups = {"HomePage",  "bat", "regression", "all"}, priority = 0)
 	public void testNavigateToHomePage() {
 		String expected = "The Internet";

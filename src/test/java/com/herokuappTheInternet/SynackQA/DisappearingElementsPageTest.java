@@ -9,6 +9,9 @@
 package com.herokuappTheInternet.SynackQA;
 
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 /**
@@ -21,6 +24,35 @@ import org.testng.annotations.Test;
  */
 public class DisappearingElementsPageTest extends BaseTest {
 	
+	@Parameters({ "browser", "appURL", "groups" })
+	@BeforeMethod(alwaysRun = true)				
+	//public void initializeClassTestBaseSetup(String browser, String appURL, String groups) {
+	public void initializeTestBaseSetup(String browser, String appURL, String groups) {
+		try {
+			DriverFactory.setDriver(browser, appURL, groups);
+
+		} catch (Exception e) {
+			System.out.println("Error....." + e.getStackTrace());
+		}
+		driver = DriverFactory.getDriver();
+		
+		homePage = new HomePage(driver);
+		disappearingElementsPage = new DisappearingElementsPage(driver);
+		aboutPage = new AboutPage(driver);
+		contactUsPage = new ContactUsPage(driver);
+		dynamicContentPage = new DynamicContentPage(driver);
+		portfolioPage = new PortfolioPage(driver);
+		galleryPage = new GalleryPage(driver);
+		helper = new Helper();
+	}
+	
+	@AfterMethod(enabled = true, alwaysRun = true)
+	//public void afterClassTearDown() {
+	public void afterMethodearDown() {
+	//	driver.close();
+		driver.quit();
+		}		
+	
 	@Test(enabled = true, groups = {"DisappearingElementsPageTest",  "bat", "regression", "all"}, priority = 0)
 	public void testNavigateToHomePage() {
 		String expected = "The Internet";
@@ -29,7 +61,7 @@ public class DisappearingElementsPageTest extends BaseTest {
 		Assert.assertEquals(homePage.currentPageTitle(), expected, "Welcome message doesn't match to Home page");
 	}
 	
-	@Test(enabled = true, groups = {"DisappearingElementsPageTest",  "bat", "regression", "all"}, priority = 0)
+	@Test(enabled = true, groups = {"DisappearingElementsPageTest",  "bat", "regression", "all"}, priority = 1)
 	public void testNavigateToAboutPage() {
 		String expected = "https://the-internet.herokuapp.com/about/";
 		homePage.navigateToDisappearingElementsPage();
@@ -37,7 +69,7 @@ public class DisappearingElementsPageTest extends BaseTest {
 		Assert.assertEquals(aboutPage.currentUrl(), expected, "Welcome message doesn't match to Home page");
 	}
 	
-	@Test(enabled = true, groups = {"DisappearingElementsPageTest",  "bat", "regression", "all"}, priority = 0)
+	@Test(enabled = true, groups = {"DisappearingElementsPageTest",  "bat", "regression", "all"}, priority = 2)
 	public void testNavigateToContactUsPage() {
 		String expected = "https://the-internet.herokuapp.com/contact-us/";
 		homePage.navigateToDisappearingElementsPage();
@@ -45,7 +77,7 @@ public class DisappearingElementsPageTest extends BaseTest {
 		Assert.assertEquals(aboutPage.currentUrl(), expected, "Welcome message doesn't match to Home page");
 	}
 	
-	@Test(enabled = true, groups = {"DisappearingElementsPageTest",  "bat", "regression", "all"}, priority = 0)
+	@Test(enabled = true, groups = {"DisappearingElementsPageTest",  "bat", "regression", "all"}, priority = 3)
 	public void testNavigateToPortfolioPage() {
 		String expected = "https://the-internet.herokuapp.com/portfolio/";
 		homePage.navigateToDisappearingElementsPage();
@@ -53,7 +85,7 @@ public class DisappearingElementsPageTest extends BaseTest {
 		Assert.assertEquals(portfolioPage.currentUrl(), expected, "Welcome message doesn't match to Home page");
 	}
 	
-	@Test(enabled = true, groups = {"DisappearingElementsPageTest",  "bat", "regression", "all"}, priority = 0)
+	@Test(enabled = true, groups = {"DisappearingElementsPageTest",  "bat", "regression", "all"}, priority = 4)
 	public void testNavigateToGalleryPage() {
 		String expected = "https://the-internet.herokuapp.com/gallery/";
 		homePage.navigateToDisappearingElementsPage();

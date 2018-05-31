@@ -8,7 +8,6 @@
 
 package com.herokuappTheInternet.SynackQA;
 
-import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -30,7 +29,7 @@ public class DriverFactory {
 	
 	public static WebDriver driver;
 	public static DesiredCapabilities capabilities;
-	public static String driverPath = "/uiapibbc/resources/webdrivers/mac/";
+	public static String driverPath = "/SynackQA/resources/webdrivers/mac/";
 
 	public static WebDriver getDriver() {
 		return driver;
@@ -57,8 +56,7 @@ public class DriverFactory {
 		    capabilities = DesiredCapabilities.firefox();
 		    capabilities.setCapability("marionette", true);
 		    driver = new FirefoxDriver(capabilities);
-//		    driver.manage().window().maximize();
-			driver.manage().window().setSize(new Dimension(1920, 1080));
+		    driver.manage().window().maximize(); 
 			driver.get(appURL);
 			break;
 		default:
