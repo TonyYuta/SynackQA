@@ -42,12 +42,12 @@ public class DynamicContentPageTest extends BaseTest {
 		driver = DriverFactory.getDriver();
 		
 		homePage = new HomePage(driver);
-		disappearingElementsPage = new DisappearingElementsPage(driver);
-		aboutPage = new AboutPage(driver);
-		contactUsPage = new ContactUsPage(driver);
+		//disappearingElementsPage = new DisappearingElementsPage(driver);
+		//aboutPage = new AboutPage(driver);
+		//contactUsPage = new ContactUsPage(driver);
 		dynamicContentPage = new DynamicContentPage(driver);
-		portfolioPage = new PortfolioPage(driver);
-		galleryPage = new GalleryPage(driver);
+		//portfolioPage = new PortfolioPage(driver);
+		//galleryPage = new GalleryPage(driver);
 		helper = new Helper();
 	}
 	
@@ -61,7 +61,7 @@ public class DynamicContentPageTest extends BaseTest {
 	public void testValueOriginalDynamicContent() {
 		homePage.navigateToDynamicContentPage();
 		String[] resultOriginalDynamicContent = new String[3];
-		Helper.waiting(1000);
+	//	Helper.waiting(1000);
 		for (int i = 0; i < 3; i++) {
 			resultOriginalDynamicContent[i] = dynamicContentPage.captureDynamicContent()[i];
 		}
@@ -73,34 +73,24 @@ public class DynamicContentPageTest extends BaseTest {
 	public void testValueUpdatedDynamicContent() {
 		homePage.navigateToDynamicContentPage();
 		String[] resultUpdatedDynamicContent = new String[3];
-		//Helper.waiting(1000);
 		dynamicContentPage.updateDynamicContent();
-		//Helper.waiting(1000);
 		for (int i = 0; i < 3; i++) {
 			resultUpdatedDynamicContent[i] = dynamicContentPage.captureDynamicContent()[i];
-		}
-		
+		}	
 		Assert.assertFalse(resultUpdatedDynamicContent[0] == "" || resultUpdatedDynamicContent[1] == "" || resultUpdatedDynamicContent[2] == "" , "One of updated Dynamic Content text equals to 0");
 	}
 	
 	@Test(enabled = true, groups = {"DynamicContentPage",  "bat", "regression", "all"}, priority = 2)
 	public void testChangingDynamicContent() {
 		homePage.navigateToDynamicContentPage();
-	//	System.out.println("==================================== debug 01 ===================================");
-
-		Helper.waiting(1000);
+	//	Helper.waiting(1000);
 
 		String[] resultOriginalDynamicContent = new String[3];
-	//	System.out.println("==================================== debug 02 ===================================");
 
 		for (int i = 0; i < 3; i++) {
 			resultOriginalDynamicContent[i] = dynamicContentPage.captureDynamicContent()[i];
-		//	System.out.println("==================================== start debug 03 (" + i + ") ===================================");
-		//	System.out.println(resultOriginalDynamicContent[i]);
-		//	System.out.println("====================================   end debug 03 (" + i + ") ===================================");
 		}
 		dynamicContentPage.updateDynamicContent();
-	//	Helper.waiting(1000);
 
 		String[] resultUpdatedDynamicContent = new String[3];
 		for (int i = 0; i < 3; i++) {

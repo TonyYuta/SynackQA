@@ -9,7 +9,8 @@
       <class name="com.herokuappTheInternet.SynackQA.HomePageTest"/>
       <class name="com.herokuappTheInternet.SynackQA.DisappearingElementsPageTest"/>  
       <class name="com.herokuappTheInternet.SynackQA.DynamicContentPageTest"/>    
-  
+      <class name="com.herokuappTheInternet.SynackQA.LoginTest"/>         
+
    </classes>
   </test>
 </suite>

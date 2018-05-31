@@ -34,9 +34,11 @@ public class BaseTest {
 	AboutPage aboutPage;
 	ContactUsPage contactUsPage;
 	DynamicContentPage dynamicContentPage;
+	LoginPage loginPage;
 	PortfolioPage portfolioPage;
 	GalleryPage galleryPage;
 	Helper helper;
+	SecurePage securePage;
 	
 	ArrayList<String> al;
 	HashSet<String> hs;

@@ -39,7 +39,7 @@ public class DisappearingElementsPageTest extends BaseTest {
 		disappearingElementsPage = new DisappearingElementsPage(driver);
 		aboutPage = new AboutPage(driver);
 		contactUsPage = new ContactUsPage(driver);
-		dynamicContentPage = new DynamicContentPage(driver);
+		//dynamicContentPage = new DynamicContentPage(driver);
 		portfolioPage = new PortfolioPage(driver);
 		galleryPage = new GalleryPage(driver);
 		helper = new Helper();

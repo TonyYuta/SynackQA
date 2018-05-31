@@ -1,5 +1,5 @@
 /**
- *   File Name: LoatingMenuPage.java<br>
+ *   File Name: FloatingMenuPage.java<br>
  *
  *   Yutaka<br>
  *   Created: May 27, 2018
@@ -11,7 +11,7 @@ package com.herokuappTheInternet.SynackQA;
 import org.openqa.selenium.WebDriver;
 
 /**
- * LoatingMenuPage //ADDD (description of class)
+ * FloatingMenuPage //ADDD (description of class)
  * <p>
  * //ADDD (description of core fields)
  * <p>
@@ -22,9 +22,9 @@ import org.openqa.selenium.WebDriver;
  * @since       1.0
  *
  */
-public class LoatingMenuPage extends BasePage {
+public class FloatingMenuPage extends BasePage {
 	
-	public LoatingMenuPage(WebDriver driver) {
+	public FloatingMenuPage(WebDriver driver) {
 		super(driver);
 	}
 }

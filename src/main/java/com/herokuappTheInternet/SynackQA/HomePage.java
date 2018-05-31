@@ -25,13 +25,9 @@ import org.openqa.selenium.WebDriver;
  */
 public class HomePage extends BasePage {
 	
-	public HomePage(WebDriver driver) {
-		super(driver);
-	}
-	
 	private static String homePageUrl = "https://the-internet.herokuapp.com/";
-	
-	
+	private static String loginPageUrl = "https://the-internet.herokuapp.com/login";
+
 	// ============================= page =============================	
 	// titles / text
 	private By welcomeTitle						= By.cssSelector("#content > h1");
@@ -77,7 +73,11 @@ public class HomePage extends BasePage {
 	private By statusCodesLink					= By.cssSelector("#content > ul > li:nth-child(37) > a");
 	private By typosLink						= By.cssSelector("#content > ul > li:nth-child(38) > a");
 	private By wYSIWYGEditorLink				= By.cssSelector("#content > ul > li:nth-child(39) > a");
-			
+		
+	public HomePage(WebDriver driver) {
+		super(driver);
+	}
+	
 	public HomePage navigateToHomePage() {
 		driver.navigate().to(homePageUrl);
 		return new HomePage(driver);
@@ -173,10 +173,10 @@ public class HomePage extends BasePage {
 		return new FileUploadPage(driver);
 	}
 	
-	public LoatingMenuPage navigateToLoatingMenuPage() {
+	public FloatingMenuPage navigateToFloatingMenuPage() {
 		we = driver.findElement(floatingMenuLink);
 		we.click();
-		return new LoatingMenuPage(driver);
+		return new FloatingMenuPage(driver);
 	}
 
 	public ForgotPasswordPage navigateToForgotPasswordPage() {
@@ -249,6 +249,11 @@ public class HomePage extends BasePage {
 		we = driver.findElement(largeAndDeepDOMLink);
 		we.click();
 		return new LargeAndDeepDOMPage(driver);
+	}
+	
+	public LoginPage navigateToLoginPage() {
+		driver.navigate().to(loginPageUrl);
+		return new LoginPage(driver);
 	}
 
 	public MultipleWindowsPage navigateToMultipleWindowsPage() {
