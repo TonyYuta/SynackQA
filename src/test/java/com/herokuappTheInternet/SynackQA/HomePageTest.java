@@ -9,6 +9,9 @@
 package com.herokuappTheInternet.SynackQA;
 
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 /**
@@ -20,7 +23,7 @@ import org.testng.annotations.Test;
  *
  */
 public class HomePageTest extends BaseTest {
-	/*
+	
 	@Parameters({ "browser", "appURL", "groups" })
 	@BeforeMethod(alwaysRun = true)				
 	//public void initializeClassTestBaseSetup(String browser, String appURL, String groups) {
@@ -49,7 +52,10 @@ public class HomePageTest extends BaseTest {
 	//	driver.close();
 		driver.quit();
 		}		
-	*/
+	
+	
+
+	
 	@Test(enabled = true, groups = {"HomePage",  "bat", "regression", "all"}, priority = 0)
 	public void testNavigateToHomePage() {
 		String expected = "The Internet";
