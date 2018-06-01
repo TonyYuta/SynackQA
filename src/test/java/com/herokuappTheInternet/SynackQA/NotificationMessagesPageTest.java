@@ -51,13 +51,36 @@ public class NotificationMessagesPageTest extends BaseTest {
 	
 	@Test(enabled = true, groups = {"NotificationMessagesPage",  "bat", "regression", "all"}, priority = 7)
 	public void testGetNotification() {
-		String expected1 = "\n" + 
-				"            Action unsuccesful, please try again\n" + 
-				"            ";
-		String expected2 = "            Action successful";
+		String expected1 = "Action unsuccesful, please try again\n" + 
+				"×";
+		String expected2 = "Action successful\n" + 
+				"×";
 
 		homePage.navigateToNotificationMessagesPage();
 		Assert.assertTrue((notificationMessagesPage.getNotification().equals(expected1) || notificationMessagesPage.getNotification().equals(expected2)), "There is no any expected notifications");
+	}
+	
+	@Test(enabled = true, groups = {"NotificationMessagesPage",  "bat", "regression", "all"}, priority = 7)
+	public void testForceToGetSuccessNotification() {
+		boolean expected = false;
+		String expected1 = "Action unsuccesful, please try again\n" + 
+				"×";
+		String expected2 = "Action successful\n" + 
+				"×";
+		homePage.navigateToNotificationMessagesPage();
+		
+		for (int i = 0; i < 10; i++) {
+			if(notificationMessagesPage.getNotification().equals(expected1)) {
+				expected = false;
+				notificationMessagesPage.updateNotification();
+				Helper.waiting(1000);
+			} else if(notificationMessagesPage.getNotification().equals(expected2)) {
+				expected = true;
+				System.out.println("============== debug ============= i: " + i);
+				break;
+			}
+		}
+		Assert.assertTrue(expected, "There is no successfull notification after click the btn 10 times");
 	}
 	
 	
