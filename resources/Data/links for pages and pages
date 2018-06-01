@@ -36,7 +36,8 @@ largeAndDeepDOMLink				LargeAndDeepDOMPage				largeAndDeepDOMPage
 multipleWindowsLink				MultipleWindowsPage				multipleWindowsPage
 nestedFramesLink				NestedFramesPage				nestedFramesPage			
 notificationMessagesLink		NotificationMessagesPage		notificationMessagesPage
-redirectLinkLink				RedirectLinkPage				redirectLinkPage		
+redirectLinkLink				RedirectLinkPage				redirectLinkPage
+								SecurePage 						securePage
 secureFileDownloadLink			SecureFileDownloadPage			secureFileDownloadPage
 shiftingContentLink				ShiftingContentPage				shiftingContentPage			
 slowResourcesLink				SlowResourcesPage				slowResourcesPage			
@@ -86,6 +87,7 @@ MultipleWindowsPage
 NestedFramesPage
 NotificationMessagesPage
 RedirectLinkPage
+SecurePage
 SecureFileDownloadPage
 ShiftingContentPage
 SlowResourcesPage
@@ -101,7 +103,7 @@ BaseTest
 DisappearingElementsPageTest
 DriverFactory
 DynamicContentPageTest
-LoginPageTest
+LoginTest
 HomePageTest
 HoversPageTest
 NotificationMessagesPageTest

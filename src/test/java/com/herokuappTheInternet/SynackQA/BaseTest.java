@@ -38,6 +38,7 @@ public class BaseTest {
 	PortfolioPage portfolioPage;
 	GalleryPage galleryPage;
 	Helper helper;
+	HoversPage hoversPage;
 	SecurePage securePage;
 	
 	ArrayList<String> al;
