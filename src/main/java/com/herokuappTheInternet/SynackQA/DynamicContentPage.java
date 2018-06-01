@@ -11,18 +11,6 @@ package com.herokuappTheInternet.SynackQA;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-/**
- * DynamicContentPage //ADDD (description of class)
- * <p>
- * //ADDD (description of core fields)
- * <p>
- * //ADDD (description of core methods)
- * 
- * @author      Yutaka
- * @version     1.0.0
- * @since       1.0
- *
- */
 public class DynamicContentPage extends BasePage {
 	
 	// ============================= page =============================	
@@ -43,7 +31,6 @@ public class DynamicContentPage extends BasePage {
 	}
 	
 	public void updateDynamicContent() {
-	//	Helper.waiting(1000);
 		we = driver.findElement(clickHereLink);
 		we.click();
 	}

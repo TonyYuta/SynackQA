@@ -10,18 +10,6 @@ package com.herokuappTheInternet.SynackQA;
 
 import org.openqa.selenium.WebDriver;
 
-/**
- * BasicAuthPage //ADDD (description of class)
- * <p>
- * //ADDD (description of core fields)
- * <p>
- * //ADDD (description of core methods)
- * 
- * @author      Yutaka
- * @version     1.0.0
- * @since       1.0
- *
- */
 public class BasicAuthPage extends BasePage {
 	
 	public BasicAuthPage(WebDriver driver) {

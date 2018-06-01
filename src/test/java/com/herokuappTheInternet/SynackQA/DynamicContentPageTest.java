@@ -16,18 +16,6 @@ import org.testng.annotations.Test;
 
 import edu.emory.mathcs.backport.java.util.Arrays;
 
-/**
- * DynamicContentPageTest //ADDD (description of class)
- * <p>
- * //ADDD (description of core fields)
- * <p>
- * //ADDD (description of core methods)
- * 
- * @author      Yutaka
- * @version     1.0.0
- * @since       1.0
- *
- */
 public class DynamicContentPageTest extends BaseTest {
 
 	@Parameters({ "browser", "appURL", "groups" })
@@ -42,18 +30,12 @@ public class DynamicContentPageTest extends BaseTest {
 		driver = DriverFactory.getDriver();
 		
 		homePage = new HomePage(driver);
-		//disappearingElementsPage = new DisappearingElementsPage(driver);
-		//aboutPage = new AboutPage(driver);
-		//contactUsPage = new ContactUsPage(driver);
 		dynamicContentPage = new DynamicContentPage(driver);
-		//portfolioPage = new PortfolioPage(driver);
-		//galleryPage = new GalleryPage(driver);
 		helper = new Helper();
 	}
 	
 	@AfterMethod(alwaysRun = true)
 	public void afterTestTearDown() {
-	//	driver.close();
 		driver.quit();
 		}			
 	
@@ -61,7 +43,6 @@ public class DynamicContentPageTest extends BaseTest {
 	public void testValueOriginalDynamicContent() {
 		homePage.navigateToDynamicContentPage();
 		String[] resultOriginalDynamicContent = new String[3];
-	//	Helper.waiting(1000);
 		for (int i = 0; i < 3; i++) {
 			resultOriginalDynamicContent[i] = dynamicContentPage.captureDynamicContent()[i];
 		}
@@ -83,7 +64,6 @@ public class DynamicContentPageTest extends BaseTest {
 	@Test(enabled = true, groups = {"DynamicContentPage",  "bat", "regression", "all"}, priority = 2)
 	public void testChangingDynamicContent() {
 		homePage.navigateToDynamicContentPage();
-	//	Helper.waiting(1000);
 
 		String[] resultOriginalDynamicContent = new String[3];
 

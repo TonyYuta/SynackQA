@@ -14,17 +14,6 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
-/**
- * DriverFactory -- browsers
- * <p>
- * <p>
- * //choose and set up webdriver
- * 
- * @author      Yutaka
- * @version     1.0.0
- * @since       1.0
- *
- */
 public class DriverFactory {
 	
 	public static WebDriver driver;
@@ -39,7 +28,6 @@ public class DriverFactory {
 		switch (browser) {
 		case "chrome":			
 			 System.setProperty("webdriver.chrome.driver", "/Library/chromedriver");
-				//System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"/resources/webdrivers/mac/chromedriver");
 				capabilities = DesiredCapabilities.chrome();
 				ChromeOptions options = new ChromeOptions();
 				options.addArguments("test-type");

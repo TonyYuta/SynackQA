@@ -10,18 +10,6 @@ package com.herokuappTheInternet.SynackQA;
 
 import org.openqa.selenium.WebDriver;
 
-/**
- * JavaScriptOnloadEventErrorPage //ADDD (description of class)
- * <p>
- * //ADDD (description of core fields)
- * <p>
- * //ADDD (description of core methods)
- * 
- * @author      Yutaka
- * @version     1.0.0
- * @since       1.0
- *
- */
 public class JavaScriptOnloadEventErrorPage extends BasePage {
 	
 	public JavaScriptOnloadEventErrorPage(WebDriver driver) {

@@ -10,18 +10,6 @@ package com.herokuappTheInternet.SynackQA;
 
 import org.openqa.selenium.WebDriver;
 
-/**
- * DynamicLoadingPage //ADDD (description of class)
- * <p>
- * //ADDD (description of core fields)
- * <p>
- * //ADDD (description of core methods)
- * 
- * @author      Yutaka
- * @version     1.0.0
- * @since       1.0
- *
- */
 public class DynamicLoadingPage extends BasePage {
 	
 	public DynamicLoadingPage(WebDriver driver) {

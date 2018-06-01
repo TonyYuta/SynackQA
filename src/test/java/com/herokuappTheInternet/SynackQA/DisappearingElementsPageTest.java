@@ -14,14 +14,6 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-/**
- * DisappearingElementsPageTest 
- * 
- * @author      Yutaka
- * @version     1.0.0
- * @since       1.0
- *
- */
 public class DisappearingElementsPageTest extends BaseTest {
 	
 	@Parameters({ "browser", "appURL", "groups" })
@@ -39,16 +31,13 @@ public class DisappearingElementsPageTest extends BaseTest {
 		disappearingElementsPage = new DisappearingElementsPage(driver);
 		aboutPage = new AboutPage(driver);
 		contactUsPage = new ContactUsPage(driver);
-		//dynamicContentPage = new DynamicContentPage(driver);
 		portfolioPage = new PortfolioPage(driver);
 		galleryPage = new GalleryPage(driver);
 		helper = new Helper();
 	}
 	
 	@AfterMethod(enabled = true, alwaysRun = true)
-	//public void afterClassTearDown() {
 	public void afterMethodearDown() {
-	//	driver.close();
 		driver.quit();
 		}		
 	

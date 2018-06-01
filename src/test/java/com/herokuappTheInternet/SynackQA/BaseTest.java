@@ -13,18 +13,6 @@ import java.util.HashSet;
 
 import org.openqa.selenium.WebDriver;
 
-/**
- * BaseTest //ADDD (description of class)
- * <p>
- * //ADDD (description of core fields)
- * <p>
- * //ADDD (description of core methods)
- * 
- * @author      Yutaka
- * @version     1.0.0
- * @since       1.0
- *
- */
 public class BaseTest {
 	
 	WebDriver driver;
@@ -44,35 +32,7 @@ public class BaseTest {
 	
 	ArrayList<String> al;
 	HashSet<String> hs;
-/*	
-	@Parameters({ "browser", "appURL", "groups" })
-	@BeforeClass(alwaysRun = true)				
-	public void initializeClassTestBaseSetup(String browser, String appURL, String groups) {
-		try {
-			DriverFactory.setDriver(browser, appURL, groups);
 
-		} catch (Exception e) {
-			System.out.println("Error....." + e.getStackTrace());
-		}
-		driver = DriverFactory.getDriver();
-		
-		homePage = new HomePage(driver);
-		disappearingElementsPage = new DisappearingElementsPage(driver);
-		aboutPage = new AboutPage(driver);
-		contactUsPage = new ContactUsPage(driver);
-		dynamicContentPage = new DynamicContentPage(driver);
-		portfolioPage = new PortfolioPage(driver);
-		galleryPage = new GalleryPage(driver);
-		helper = new Helper();
-	}
-	
-	@AfterClass(alwaysRun = true)
-	public void afterClassTearDown() {
-		//driver.close();
-		driver.quit();
-		}	
-	
-*/
 	
 
 }
