@@ -64,7 +64,6 @@ public class NotificationMessagesPageTest extends BaseTest {
 				Helper.waiting(1000);
 			} else if(notificationMessagesPage.getNotification().equals(expected2)) {
 				expected = true;
-				System.out.println("============== debug ============= i: " + i);
 				break;
 			}
 		}
