@@ -49,7 +49,7 @@ public class DisappearingElementsPageTest extends BaseTest {
 		Assert.assertEquals(homePage.currentPageTitle(), expected, "Welcome message doesn't match to Home page");
 	}
 	
-	@Test(enabled = true, groups = {"DisappearingElementsPage",  "bat", "regression", "all"}, priority = 1)
+	@Test(enabled = true, groups = {"DisappearingElementsPage", "regression", "all"}, priority = 1)
 	public void testNavigateToAboutPage() {
 		String expected = "https://the-internet.herokuapp.com/about/";
 		homePage.navigateToDisappearingElementsPage();
@@ -57,7 +57,7 @@ public class DisappearingElementsPageTest extends BaseTest {
 		Assert.assertEquals(aboutPage.currentUrl(), expected, "Welcome message doesn't match to Home page");
 	}
 	
-	@Test(enabled = true, groups = {"DisappearingElementsPage",  "bat", "regression", "all"}, priority = 1)
+	@Test(enabled = true, groups = {"DisappearingElementsPage", "regression", "all"}, priority = 1)
 	public void testNavigateToContactUsPage() {
 		String expected = "https://the-internet.herokuapp.com/contact-us/";
 		homePage.navigateToDisappearingElementsPage();
@@ -65,7 +65,7 @@ public class DisappearingElementsPageTest extends BaseTest {
 		Assert.assertEquals(aboutPage.currentUrl(), expected, "Welcome message doesn't match to Home page");
 	}
 	
-	@Test(enabled = true, groups = {"DisappearingElementsPage",  "bat", "regression", "all"}, priority = 1)
+	@Test(enabled = true, groups = {"DisappearingElementsPage", "regression", "all"}, priority = 1)
 	public void testNavigateToPortfolioPage() {
 		String expected = "https://the-internet.herokuapp.com/portfolio/";
 		homePage.navigateToDisappearingElementsPage();
@@ -73,7 +73,7 @@ public class DisappearingElementsPageTest extends BaseTest {
 		Assert.assertEquals(portfolioPage.currentUrl(), expected, "Welcome message doesn't match to Home page");
 	}
 	
-	@Test(enabled = true, groups = {"DisappearingElementsPage",  "bat", "regression", "all"}, priority = 1)
+	@Test(enabled = true, groups = {"DisappearingElementsPage", "regression", "all"}, priority = 1)
 	public void testNavigateToGalleryPage() {
 		String expected = "https://the-internet.herokuapp.com/gallery/";
 		homePage.navigateToDisappearingElementsPage();

@@ -48,7 +48,7 @@ public class NotificationMessagesPageTest extends BaseTest {
 		Assert.assertTrue((notificationMessagesPage.getNotification().equals(expected1) || notificationMessagesPage.getNotification().equals(expected2)), "There is no any expected notifications");
 	}
 	
-	@Test(enabled = true, groups = {"NotificationMessagesPage",  "bat", "regression", "all"}, priority = 7)
+	@Test(enabled = true, groups = {"NotificationMessagesPage", "regression", "all"}, priority = 7)
 	public void testForceToGetSuccessNotification() {
 		boolean expected = false;
 		String expected1 = "Action unsuccesful, please try again\n" + 

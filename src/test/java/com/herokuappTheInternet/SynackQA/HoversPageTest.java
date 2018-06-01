@@ -50,21 +50,21 @@ public class HoversPageTest extends BaseTest {
 		Assert.assertEquals(hoversPage.getUser1Name(), expected, "UserName doesn't match to actual Username");
 	}
 	
-	@Test(enabled = true, groups = {"HoversPage",  "bat", "regression", "all"}, priority = 5)
+	@Test(enabled = true, groups = {"HoversPage", "regression", "all"}, priority = 5)
 	public void testGetUser2Name() {
 		String expected = "name: user2";
 		homePage.navigateToHoversPage();
 		Assert.assertEquals(hoversPage.getUser2Name(), expected, "UserName doesn't match to actual Username");
 	}
 	
-	@Test(enabled = true, groups = {"HoversPage",  "bat", "regression", "all"}, priority = 5)
+	@Test(enabled = true, groups = {"HoversPage", "regression", "all"}, priority = 5)
 	public void testGetUser3Name() {
 		String expected = "name: user3";
 		homePage.navigateToHoversPage();
 		Assert.assertEquals(hoversPage.getUser3Name(), expected, "UserName doesn't match to actual Username");
 	}
 	
-	@Test(enabled = true, groups = {"HoversPage",  "bat", "regression", "all"}, priority = 5)
+	@Test(enabled = true, groups = {"HoversPage", "regression", "all"}, priority = 5)
 	public void testNavigateToUser1Profile() {
 		String expected = "https://the-internet.herokuapp.com/users/1";
 		homePage.navigateToHoversPage();
@@ -72,7 +72,7 @@ public class HoversPageTest extends BaseTest {
 		Assert.assertEquals(hoversPage.navigateToUser1Profile(), expected, "User1 profile page doesn't match to actual page");
 	}
 	
-	@Test(enabled = true, groups = {"HoversPage",  "bat", "regression", "all"}, priority = 5)
+	@Test(enabled = true, groups = {"HoversPage", "bat", "regression", "all"}, priority = 5)
 	public void testNavigateToUser2Profile() {
 		String expected = "https://the-internet.herokuapp.com/users/2";
 		homePage.navigateToHoversPage();
@@ -80,7 +80,7 @@ public class HoversPageTest extends BaseTest {
 		Assert.assertEquals(hoversPage.navigateToUser2Profile(), expected, "User2 profile page doesn't match to actual page");
 	}
 	
-	@Test(enabled = true, groups = {"HoversPage",  "bat", "regression", "all"}, priority = 5)
+	@Test(enabled = true, groups = {"HoversPage", "regression", "all"}, priority = 5)
 	public void testNavigateToUser3Profile() {
 		String expected = "https://the-internet.herokuapp.com/users/3";
 		homePage.navigateToHoversPage();

@@ -50,7 +50,7 @@ public class DynamicContentPageTest extends BaseTest {
 		Assert.assertFalse(resultOriginalDynamicContent[0] == "" || resultOriginalDynamicContent[1] == "" || resultOriginalDynamicContent[2] == "" , "One of original Dynamic Content text equals to 0");
 	}
 	
-	@Test(enabled = true, groups = {"DynamicContentPage",  "bat", "regression", "all"}, priority = 2)
+	@Test(enabled = true, groups = {"DynamicContentPage", "regression", "all"}, priority = 2)
 	public void testValueUpdatedDynamicContent() {
 		homePage.navigateToDynamicContentPage();
 		String[] resultUpdatedDynamicContent = new String[3];
@@ -61,7 +61,7 @@ public class DynamicContentPageTest extends BaseTest {
 		Assert.assertFalse(resultUpdatedDynamicContent[0] == "" || resultUpdatedDynamicContent[1] == "" || resultUpdatedDynamicContent[2] == "" , "One of updated Dynamic Content text equals to 0");
 	}
 	
-	@Test(enabled = true, groups = {"DynamicContentPage",  "bat", "regression", "all"}, priority = 2)
+	@Test(enabled = true, groups = {"DynamicContentPage", "regression", "all"}, priority = 2)
 	public void testChangingDynamicContent() {
 		homePage.navigateToDynamicContentPage();
 

@@ -50,7 +50,7 @@ public class HomePageTest extends BaseTest {
 		Assert.assertEquals(homePage.currentPageTitle(), expected, "URI doesn't match to Home page");
 	}
 
-	@Test(enabled = true, groups = {"HoversPage",  "bat", "regression", "all"}, priority = 5)
+	@Test(enabled = true, groups = {"HoversPage", "regression", "all"}, priority = 5)
 	public void testNavigateToHoversPage() {
 		String expected = "Hovers";
 		homePage.navigateToHoversPage();
