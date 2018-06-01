@@ -11,8 +11,7 @@ package com.herokuappTheInternet.SynackQA;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.interactions.Actions;
 
 /**
  * HoversPage //ADDD (description of class)
@@ -37,39 +36,92 @@ public class HoversPage extends BasePage {
 	private By avatarUser2				= By.cssSelector("#content > div > div:nth-child(4) > img");
 	private By avatarUser3				= By.cssSelector("#content > div > div:nth-child(5) > img");
 	private By user1Name				= By.cssSelector("#content > div > div:nth-child(3) > div > h5"); 	
-	private By user2Name				= By.cssSelector("#content > div > div:nth-child(3) > div > h5"); 	
-	private By user3Name				= By.cssSelector("#content > div > div:nth-child(3) > div > h5"); 	
+	private By user2Name				= By.cssSelector("#content > div > div:nth-child(4) > div > h5"); 	
+	private By user3Name				= By.cssSelector("#content > div > div:nth-child(5) > div > h5"); 	
+	
+	private By viewProfileUser1Link		= By.cssSelector("#content > div > div:nth-child(3) > div > a"); 	
+	private By viewProfileUser2Link		= By.cssSelector("#content > div > div:nth-child(4) > div > a"); 	
+	private By viewProfileUser3Link		= By.cssSelector("#content > div > div:nth-child(5) > div > a"); 	
 	
 	HoversPage(WebDriver driver) {
 		super(driver);
 	}
 	
-	public String getUser1Name() {
-		
-		String userName = "";
-		WebDriverWait wait = new WebDriverWait(driver, 5);
-		wait.until(ExpectedConditions.visibilityOf((WebElement) avatarUser1));
-		wait.until(ExpectedConditions.visibilityOf((WebElement) user1Name));
-		userName = driver.findElement(user1Name).getText();
-		return userName;
-		/*
-		WebDriverWait wait = new WebDriverWait(driver, 5);
-		wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(selector_For_Element_To_Be_Click_After_Hover)));
-		driver.findElement(By.cssSelector(selector_For_Element_To_Be_Click_After_Hover)).click();
-*/
-	/*	Actions action = new Actions(driver);
-		we = driver.findElement(avatarUser1);
-		action.moveToElement(we).moveToElement(driver.findElement(user1Name).getText().build().perform();
-
-		WebDriverWait wait = new WebDriverWait(driver, 5);
-		wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(selector_For_Element_To_Be_Click_After_Hover)));
-		driver.findElement(By.cssSelector(selector_For_Element_To_Be_Click_After_Hover)).click();
-*/
-		
+	public String getPageTitle() {
+		return driver.findElement(pageTitle).getText();
 	}
 
+	public String getUser1Name() {		
+		Actions actions = new Actions(driver);
+		WebElement avatar = driver.findElement(avatarUser1);
+		actions.moveToElement(avatar);
+
+		WebElement userName = driver.findElement(user1Name);
+		actions.moveToElement(userName);
+		actions.build().perform();
+		
+		return userName.getText();
+	}
 	
+	public String getUser2Name() {
+		Actions actions = new Actions(driver);
+		WebElement avatar = driver.findElement(avatarUser2);
+		actions.moveToElement(avatar);
+
+		WebElement userName = driver.findElement(user2Name);
+		actions.moveToElement(userName);
+		actions.build().perform();
+		
+		return userName.getText();
+	}
 	
+	public String getUser3Name() {	
+		Actions actions = new Actions(driver);
+		WebElement avatar = driver.findElement(avatarUser3);
+		actions.moveToElement(avatar);
+
+		WebElement userName = driver.findElement(user3Name);
+		actions.moveToElement(userName);
+		actions.build().perform();
+		
+		return userName.getText();
+	}
+	
+	public String navigateToUser1Profile() {		
+		Actions actions = new Actions(driver);
+		WebElement avatar = driver.findElement(avatarUser1);
+		actions.moveToElement(avatar);
+
+		WebElement viewProfileLink = driver.findElement(viewProfileUser1Link);
+		actions.moveToElement(viewProfileLink);
+		actions.click().build().perform();
+		Helper.waiting(2000);
+		return driver.getCurrentUrl();
+	}
+	
+	public String navigateToUser2Profile() {	
+		Actions actions = new Actions(driver);
+		WebElement avatar = driver.findElement(avatarUser2);
+		actions.moveToElement(avatar);
+
+		WebElement viewProfileLink = driver.findElement(viewProfileUser2Link);
+		actions.moveToElement(viewProfileLink);
+		actions.click().build().perform();
+		Helper.waiting(2000);
+		return driver.getCurrentUrl();
+	}
+	
+	public String navigateToUser3Profile() {
+		Actions actions = new Actions(driver);
+		WebElement avatar = driver.findElement(avatarUser3);
+		actions.moveToElement(avatar);
+
+		WebElement viewProfileLink = driver.findElement(viewProfileUser3Link);
+		actions.moveToElement(viewProfileLink);
+		actions.click().build().perform();
+		Helper.waiting(2000);
+		return driver.getCurrentUrl();
+	}
 	
 	
 }

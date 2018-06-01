@@ -39,6 +39,7 @@ public class BaseTest {
 	GalleryPage galleryPage;
 	Helper helper;
 	HoversPage hoversPage;
+	NotificationMessagesPage notificationMessagesPage;
 	SecurePage securePage;
 	
 	ArrayList<String> al;

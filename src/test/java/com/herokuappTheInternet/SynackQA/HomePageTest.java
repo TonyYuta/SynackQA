@@ -47,14 +47,9 @@ public class HomePageTest extends BaseTest {
 	}
 	
 	@AfterMethod(enabled = true, alwaysRun = true)
-	//public void afterClassTearDown() {
 	public void afterMethodearDown() {
-	//	driver.close();
 		driver.quit();
-		}		
-	
-	
-
+		}			
 	
 	@Test(enabled = true, groups = {"HomePage",  "bat", "regression", "all"}, priority = 0)
 	public void testNavigateToHomePage() {
@@ -70,5 +65,11 @@ public class HomePageTest extends BaseTest {
 		Assert.assertEquals(homePage.currentPageTitle(), expected, "URI doesn't match to Home page");
 	}
 
+	@Test(enabled = true, groups = {"HoversPage",  "bat", "regression", "all"}, priority = 5)
+	public void testNavigateToHoversPage() {
+		String expected = "Hovers";
+		homePage.navigateToHoversPage();
+		Assert.assertEquals(hoversPage.getPageTitle(), expected, "Titel of page Hovers doesn't march to actual");
+	}
 	
 }

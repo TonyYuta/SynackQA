@@ -48,22 +48,56 @@ public class HoversPageTest extends BaseTest {
 		driver.quit();
 		}		
 	
-	@Test(enabled = true, groups = {"HoversPage",  "bat", "regression", "all"}, priority = 1)
-	public void testNavigateToHversPage() {
+	@Test(enabled = true, groups = {"HoversPage",  "bat", "regression", "all"}, priority = 5)
+	public void testNavigateToHoversPage() {
 		String expected = "Hovers";
 		homePage.navigateToHoversPage();
-		Assert.assertEquals(hoversPage.getUser1Name(), expected, "Titel of page Hovers doesn't march to actual");
+		Assert.assertEquals(hoversPage.getPageTitle(), expected, "Titel of page Hovers doesn't march to actual");
 	}
 	
-	@Test(enabled = true, groups = {"HoversPage",  "bat", "regression", "all"}, priority = 1)
+	@Test(enabled = true, groups = {"HoversPage",  "bat", "regression", "all"}, priority = 5)
 	public void testGetUser1Name() {
-		String expected = "User_1";
+		String expected = "name: user1";
 		homePage.navigateToHoversPage();
 		Assert.assertEquals(hoversPage.getUser1Name(), expected, "UserName doesn't match to actual Username");
 	}
 	
-
+	@Test(enabled = true, groups = {"HoversPage",  "bat", "regression", "all"}, priority = 5)
+	public void testGetUser2Name() {
+		String expected = "name: user2";
+		homePage.navigateToHoversPage();
+		Assert.assertEquals(hoversPage.getUser2Name(), expected, "UserName doesn't match to actual Username");
+	}
 	
+	@Test(enabled = true, groups = {"HoversPage",  "bat", "regression", "all"}, priority = 5)
+	public void testGetUser3Name() {
+		String expected = "name: user3";
+		homePage.navigateToHoversPage();
+		Assert.assertEquals(hoversPage.getUser3Name(), expected, "UserName doesn't match to actual Username");
+	}
+	
+	@Test(enabled = true, groups = {"HoversPage",  "bat", "regression", "all"}, priority = 5)
+	public void testNavigateToUser1Profile() {
+		String expected = "https://the-internet.herokuapp.com/users/1";
+		homePage.navigateToHoversPage();
+		String sctual = "";
+		Assert.assertEquals(hoversPage.navigateToUser1Profile(), expected, "User1 profile page doesn't match to actual page");
+	}
+	
+	@Test(enabled = true, groups = {"HoversPage",  "bat", "regression", "all"}, priority = 5)
+	public void testNavigateToUser2Profile() {
+		String expected = "https://the-internet.herokuapp.com/users/2";
+		homePage.navigateToHoversPage();
+		String sctual = "";
+		Assert.assertEquals(hoversPage.navigateToUser2Profile(), expected, "User2 profile page doesn't match to actual page");
+	}
+	
+	@Test(enabled = true, groups = {"HoversPage",  "bat", "regression", "all"}, priority = 5)
+	public void testNavigateToUser3Profile() {
+		String expected = "https://the-internet.herokuapp.com/users/3";
+		homePage.navigateToHoversPage();
+		Assert.assertEquals(hoversPage.navigateToUser3Profile(), expected, "User3 profile page doesn't match to actual page");
+	}
 
 	
 	
