@@ -47,7 +47,7 @@ public class LoginTest extends BaseTest {
 		driver.quit();
 		}		
 	
-	@Test(enabled = true, groups = {"LoginPage", "SecurePage", "bat", "regression", "all"}, priority = 0)
+	@Test(enabled = true, groups = {"LoginPage", "SecurePage", "bat", "all"}, priority = 4)
 	public void testLogin() {
 		String expected = "You logged into a secure area!\n" + 
 				"×";
@@ -57,7 +57,7 @@ public class LoginTest extends BaseTest {
 		Assert.assertEquals(securePage.loginStatus(), expected, "Login status doesn't match to successfully log in");
 	}
 	
-	@Test(enabled = true, groups = {"LoginPage", "SecurePage", "regression", "all"}, priority = 0)
+	@Test(enabled = true, groups = {"LoginPage", "SecurePage", "regression", "all"}, priority = 4)
 	public void testInvalidLogin() {
 		String expected = "Your username is invalid!\n" + 
 				"×";

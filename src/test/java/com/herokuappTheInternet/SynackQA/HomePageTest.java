@@ -40,21 +40,35 @@ public class HomePageTest extends BaseTest {
 	public void testNavigateToHomePage() {
 		String expected = "The Internet";
 		homePage.navigateToHomePage();
-		Assert.assertEquals(homePage.currentPageTitle(), expected, "URI doesn't match to Home page");
+		Assert.assertEquals(homePage.currentPageTitle(), expected, "Title doesn't match to Home page");
 	}
 	
 	@Test(enabled = true, groups = {"HomePage", "RegistrationPage",  "regression", "all"}, priority = 0)
 	public void testNavigateToDisappearingElementsPage() {
 		String expected = "The Internet";
 		homePage.navigateToDisappearingElementsPage();
-		Assert.assertEquals(homePage.currentPageTitle(), expected, "URI doesn't match to Home page");
+		Assert.assertEquals(homePage.currentPageTitle(), expected, "Title doesn't match to Home page");
 	}
 
-	@Test(enabled = true, groups = {"HoversPage", "regression", "all"}, priority = 5)
+	@Test(enabled = true, groups = {"HomePage", "regression", "all"}, priority = 0)
 	public void testNavigateToHoversPage() {
 		String expected = "Hovers";
 		homePage.navigateToHoversPage();
-		Assert.assertEquals(hoversPage.getPageTitle(), expected, "Titel of page Hovers doesn't march to actual");
+		Assert.assertEquals(hoversPage.getPageTitle(), expected, "Title of page Hovers doesn't march to actual");
+	}
+	
+	@Test(enabled = true, groups = {"HomePage", "regression", "all"}, priority = 0)
+	public void testNavigateToNotificationMessagesPage() {
+		String expected = "Notification Message";
+		homePage.navigateToNotificationMessagesPage();
+		Assert.assertEquals(notificationMessagesPage.getPageTitle(), expected, "Title of page NotificationMessagesPage doesn't march to actual");
+	}
+	
+	@Test(enabled = true, groups = {"HomePage", "regression", "all"}, priority = 0)
+	public void testNavigateToLoginPage() {
+		String expected = "Login Page";
+		homePage.navigateToLoginPage();
+		Assert.assertEquals(loginPage.currentPageTitle(), expected, "Title of Login Page doesn't march to actual");
 	}
 	
 }

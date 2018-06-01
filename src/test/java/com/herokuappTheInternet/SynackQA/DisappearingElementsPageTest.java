@@ -41,7 +41,7 @@ public class DisappearingElementsPageTest extends BaseTest {
 		driver.quit();
 		}		
 	
-	@Test(enabled = true, groups = {"DisappearingElementsPage",  "bat", "regression", "all"}, priority = 1)
+	@Test(enabled = true, groups = {"DisappearingElementsPage",  "bat", "all"}, priority = 1)
 	public void testNavigateToHomePage() {
 		String expected = "The Internet";
 		homePage.navigateToDisappearingElementsPage();
